@@ -1,0 +1,14 @@
+{
+  "name": "trail-booking-app",
+  "version": "0.0.1",
+  "description": "A simple Node app for booking trial classes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.16"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book trial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+    <header>
+      <h1>Fill the form</h1>
+    </header>
+    <main>
+      <form id="myForm" name="myForm">
+      	<ul>
+      		<li>
+	            <label for="parent_name">Parent's Name:</label>
+	            <input type="text" id="parent_name" name="parent_name" required>
+			</li>
+      		<li>
+				<label for="parent_contact">Parent's Contact Number:</label>
+				<input type="tel" id="parent_contact" name="parent_contact" pattern="[0-9]{10}" required>
+			</li>
+      		<li>
+	            <label for="email_id">Parent's Email ID:</label>
+	            <input type="email" id="email_id" name="email_id" required>
+			</li>
+      		<li>
+				<label for="child_name">Child's Name:</label>
+				<input type="text" id="child_name" name="child_name" required>
+			</li>
+      		<li>
+				<label for="child_age">Child's Age:</label>
+				<input type="number" id="child_age" name="child_age" min="6" max="14" required>
+			</li>
+      		<li>
+				<label for="course_name">Course Name:</label>
+				<select id="course_name" name="course_name" onchange="courseNameFunction()" required>
+					<option value="">select course</option>
+				</select>
+			</li>
+      		<li>
+				<label for="trial_date">Suitable Date for a trial class:</label>
+				<select id="trial_date" name="trial_date" onchange="trialDateFunction()" required>
+					<option value="">select date</option>
+				</select>
+			</li>
+      		<li>
+				<label for="trial_time">Suitable Time Slot for the trial class:</label>
+				<select id="trial_time" name="trial_time" required>
+					<option value="">select time</option>
+				</select>
+			</li>
+			<li>
+				<input type="submit" value="Book Trial!">
+			</li>
+		</ul>
+      </form>
+    </main>
+  </div>
+  <script src="/script.js"></script>
+  </body>
+</html>
